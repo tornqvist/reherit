@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "files": [
-    "index.js"
+    "index.js",
+    "dist/index.js",
+    "dist/index.js.map"
   ],
   "scripts": {
     "test": "node test.js && standard",
