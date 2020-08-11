@@ -123,7 +123,7 @@ watch('key', function (value) {
 A layer is the container for a component, holding its store, listeners and
 children.
 
-#### `Layer#resolve(Function)`
+#### `Layer#resolve([Function])`
 Call component function, calling any listeners and handling state in the
 process. Generators and promises returned/yielded from the component function
 are awaited for and resolved.
@@ -134,7 +134,7 @@ asynchronous updates.
 #### `Layer#assign(store, args)`
 Update layer internal store and cached arguments without issuing an update.
 
-#### `Layer#update(key, value)`
+#### `Layer#update(key, [value])`
 Update the store with given key/value pair. If no value is provided, the key is
 assigned onto the store.
 
