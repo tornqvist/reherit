@@ -1,0 +1,27 @@
+{
+  "name": "reherit",
+  "version": "1.0.0",
+  "description": "Reactive state management with prototypal inheritance",
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node test.js && standard",
+    "build": "rollup -p rollup-plugin-strip -p rollup-plugin-terser -m -o dist/index.js index.js",
+    "postbuild": "cat dist/index.js | gzip --best | wc -c | pretty-bytes",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Carl Törnqvist <carl@tornqv.ist>",
+  "repository": "github:tornqvist/reherit",
+  "license": "MIT",
+  "devDependencies": {
+    "pretty-bytes-cli": "^2.0.0",
+    "rollup": "^2.23.1",
+    "rollup-plugin-strip": "^1.2.2",
+    "rollup-plugin-terser": "^7.0.0",
+    "standard": "^14.3.4",
+    "tape": "^5.0.1"
+  }
+}
