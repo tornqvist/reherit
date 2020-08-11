@@ -1,6 +1,6 @@
 {
   "name": "reherit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reactive state management with prototypal inheritance",
   "main": "index.js",
   "type": "module",
